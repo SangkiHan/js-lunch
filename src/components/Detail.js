@@ -41,11 +41,3 @@ function createDetail(restaurant) {
 
   return template.content.cloneNode(true);
 }
-
-export function filterRestaurant(restaurantListInstance) {
-  const categoryValue = document.getElementById("category-filter").value;
-  const sortingValue = document.getElementById("sorting-filter").value;
-
-  restaurantListInstance.filterByCategory(categoryValue);
-  restaurantListInstance.sortBy(sortingValue);
-}
